@@ -1,0 +1,156 @@
+/* bg: #42275a -> #734b6d &&  #2b5876 -> #4e4376*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: 'Monserrat', sans-serif;
+}
+
+body{
+    background: #fff;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;align-items: center;
+    margin: 10px;
+    gap: 15px;
+}
+.card{
+    background: linear-gradient(to right,#2b5876,#4e4376);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+    width: 320px;
+    position: relative;
+    border-radius: 15px;
+    color: #ddd;
+
+    .profile-pic{
+      git   height: 100px;
+        width: 100px;
+        border: 2px solid #33cdd8;
+        border-radius: 50%;
+        margin: 15px;
+        background: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+        background-size: cover;
+        padding:50px;
+    }
+    .intro{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        gap: 15px;
+    }
+    .btn-group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            background:linear-gradient(#33cdd8, #099bc0);
+            padding: 5px 40px;
+            border: 0;
+            margin: 15px;
+            outline: 0;
+            color: #fff;
+            border-radius: 15px;
+        }
+    }
+}
+ul{
+    width: 100%;
+    padding: 15px 100px 15px 15px;
+}
+
+.progress{
+    height: 15px;
+    background:linear-gradient(to left, #33cdd8, #099bc0);
+    width: 0;
+    position: relative;
+    left: 0;
+    transition: 2s ease;
+    margin: 5px;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius: 15px;
+}
+
+.experience{
+    position: absolute;
+    right: -50px;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.card:hover ul>li:nth-child(1) .progress{
+    width: 100%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+.card:hover ul>li:nth-child(2) .progress{
+    transition-delay: 0.2s;
+    width: 89%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+.card:hover ul>li:nth-child(3) .progress{
+    transition-delay: 0.4s;
+    width: 25%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+.card:hover ul>li:nth-child(4) .progress{
+    transition-delay: 0.6s;
+    width: 20%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+.card:hover ul>li:nth-child(5) .progress{
+    transition-delay: 0.8s;
+    width: 10%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+.card:hover ul>li:nth-child(6) .progress{
+    transition-delay: 1s;
+    width: 100%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+.card:hover ul>li:nth-child(7) .progress{
+    transition-delay: 1.2s;
+    width: 35%;
+
+    .experience{
+        opacity: 1;
+    }
+}
+
+.panel{
+    height: 0;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 1.5s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.card:hover .panel{
+    height: 100%;
+    opacity: 1;
+    transform: translateY(0);
+}
