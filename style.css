@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  gap: 15px;
+  height: 100vh;
+  margin: 10px;
+}
+
+.card {
+  background: -webkit-gradient(linear, left top, right top, from(#2b5876), to(#4e4376));
+  background: linear-gradient(to right, #2b5876, #4e4376);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  width: 320px;
+  position: relative;
+  border-radius: 15px;
+  color: #ddd;
+}
+
+.card .profile-pic {
+  height: 100px;
+  width: 100px;
+  border: 2px solid #33cdd8;
+  border-radius: 50%;
+  background: url(https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+  background-size: cover;
+  padding: 50px;
+}
+
+.card .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 10px;
+  gap: 10px;
+}
+
+.card .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .btn-group button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#33cdd3), to(#099bc0));
+  background: linear-gradient(#33cdd3, #099bc0);
+  padding: 5px 40px;
+  border: 0;
+  margin: 15px;
+  outline: 0;
+  color: #fff;
+  border-radius: 15px;
+}
+
+ul {
+  width: 100%;
+  padding: 15px 100px 15px 15px;
+}
+
+.progress {
+  height: 15px;
+  background: -webkit-gradient(linear, right top, left top, from(#33cdd3), to(#099bc0));
+  background: linear-gradient(to left, #33cdd3, #099bc0);
+  width: 0;
+  position: relative;
+  left: 0;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+  margin: 5px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.experience {
+  position: absolute;
+  right: -50px;
+  opacity: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover ul > li:nth-child(1) .progress {
+  width: 100%;
+}
+
+.card:hover ul > li:nth-child(1) .progress .experience {
+  opacity: 1;
+}
+/*# sourceMappingURL=style.css.map */
